@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [libreview]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="Country_Language_Selection">
+        <methods>
+          <include name="getdriver"/>
+          <include name="CloseDriver"/>
+          <include name="setDriver"/>
+          <include name="select_Country_Language"/>
+        </methods>
+      </class> <!-- Country_Language_Selection -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [libreview] -->
