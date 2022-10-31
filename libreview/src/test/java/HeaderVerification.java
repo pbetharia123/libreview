@@ -22,19 +22,19 @@ public class HeaderVerification extends Initiate_Driver {
 		int pf = proflink.size();
 		
 						
-		if(p>0 & pf>0 & selectCountryName.equalsIgnoreCase("United States (US)")) {
+		if(p>0 && pf>0 && selectCountryName.equalsIgnoreCase("United States (US)")) {
 			Assert.assertTrue(true);
 			System.out.println("Patient and Professionals links are displayed for "+selectCountryName+" and "+ selectLangValue );
-		}else if(p<=0 & pf<=0 & selectCountryName.equalsIgnoreCase("United States (US)")) {
+		}else if(p<=0 && pf<=0 && selectCountryName.equalsIgnoreCase("United States (US)")) {
 			Assert.assertFalse(false);
 			System.out.println("Patient or Professionals links are not displayed for "+selectCountryName+" and "+ selectLangValue);
 		}
 		
 		
-		if(p<=0 & pf<=0 & selectCountryName.equalsIgnoreCase("France (FR)")) {
+		if(p<=0 && pf<=0 && selectCountryName.equalsIgnoreCase("France (FR)")) {
 			Assert.assertTrue(true);
 			System.out.println("Patient and Professionals links are not displayed for "+selectCountryName+" and "+ selectLangValue);
-		}else if(p>0 & pf>0 & selectCountryName.equalsIgnoreCase("France (FR)")) {
+		}else if(p>0 && pf>0 && selectCountryName.equalsIgnoreCase("France (FR)")) {
 			Assert.assertFalse(false);
 			System.out.println("Patient or Professionals links are displayed for "+selectCountryName+" and "+ selectLangValue );
 		}
